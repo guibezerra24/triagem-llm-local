@@ -82,7 +82,7 @@ No teste de 24 chamados, o modelo original acertou **11 (45,83%)**, e o ajuste s
 
 ## Evidência no VSCode
 
-`reports/gpu.txt` registra saída real do `nvidia-smi`, versão do PyTorch/runtime, nome da placa, dispositivo `cuda:0` e gradientes finitos. Abra esse relatório e `src/gpu_check.py` no VSCode. A captura entregue em `reports/gpu_vscode.jpg` mostra esses dados dentro do editor.
+`reports/gpu.txt` registra saída real do `nvidia-smi`, versão do PyTorch/runtime, nome da placa, dispositivo `cuda:0` e gradientes finitos. Abra esse relatório e `src/gpu_check.py` no VSCode. A captura entregue em `reports/gpu_vscode.png` mostra a execução do diagnóstico no terminal integrado do VSCode.
 
 Para reproduzir em sala: selecione o interpretador `.venv\Scripts\python.exe`, abra Terminal → Executar tarefa e escolha **GPU: verificar CUDA e backward**. O arquivo `.vscode/tasks.json` também contém tarefas para treinar e abrir o frontend.
 
@@ -138,7 +138,7 @@ git push -u origin main
 | Avaliar respostas | Baseline, validação, teste separado, respostas brutas e métricas |
 | Todos os testes de modelo na GPU | CUDA obrigatório em treino e inferência, com evidência de dispositivo |
 | Frontend para criar prompt | Gradio local, texto livre, modelo e temperatura |
-| Print da GPU no VSCode | `reports/gpu_vscode.jpg` e diagnóstico real |
+| Print da GPU no VSCode | `reports/gpu_vscode.png` e diagnóstico real |
 | Documentação e código no GitHub | Projeto organizado para o repositório e publicação verificável |
 | Grupo | Três integrantes identificados; entrega em trio autorizada pelo professor, conforme informado pelo grupo |
 

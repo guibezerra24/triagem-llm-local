@@ -60,7 +60,7 @@
       "requirement": "Print da GPU instalada e funcionando no VSCode",
       "status": "Atendido",
       "finding": "Captura original do VSCode exibindo GTX 1650, runtime CUDA 12.6, cuda_available=True, cuda:0, backward_finite=True e nvidia-smi.",
-      "evidence": "reports/gpu_vscode.jpg; reports/gpu.txt; src/gpu_check.py"
+      "evidence": "reports/gpu_vscode.png; reports/gpu.txt; src/gpu_check.py"
     },
     {
       "requirement": "Documentação e código no GitHub",

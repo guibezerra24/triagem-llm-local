@@ -1,6 +1,6 @@
 GPU REAL - TESTE CUDA E BACKWARD
 
-timestamp_utc: 2026-10-15T17:55:37.961137+00:00
+timestamp_utc: 2026-10-15T18:39:43.897844+00:00
 python: 3.13.16
 platform: Windows-11-10.0.26200-SP0
 torch: 2.7.1+cu126
@@ -11,10 +11,10 @@ compute_capability: [7, 5]
 total_vram_mib: 4095.5625
 operation_device: cuda:0
 backward_finite: True
-operation_seconds: 2.5001699999993434
+operation_seconds: 0.17787150000003749
 compiled_architectures: ['sm_50', 'sm_60', 'sm_61', 'sm_70', 'sm_75', 'sm_80', 'sm_86', 'sm_90']
 
-Thu Oct 15 14:55:38 2026       
+Thu Oct 15 15:39:44 2026       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 595.97                 Driver Version: 595.97         CUDA Version: 13.2     |
 +-----------------------------------------+------------------------+----------------------+
@@ -23,7 +23,7 @@ Thu Oct 15 14:55:38 2026
 |                                         |                        |               MIG M. |
 |=========================================+========================+======================|
 |   0  NVIDIA GeForce GTX 1650      WDDM  |   00000000:07:00.0  On |                  N/A |
-|  0%   56C    P0            N/A  /   75W |    1041MiB /   4096MiB |      4%      Default |
+| 38%   59C    P0            N/A  /   75W |    3260MiB /   4096MiB |     10%      Default |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
 
@@ -32,5 +32,42 @@ Thu Oct 15 14:55:38 2026
 |  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
 |        ID   ID                                                               Usage      |
 |=========================================================================================|
-|    0   N/A  N/A            2296      C   ...s\Python\Python313\python.exe      N/A      |
+|    0   N/A  N/A            2292    C+G   ...ot\Application\copilotapp.exe      N/A      |
+|    0   N/A  N/A            2464    C+G   ...aries\Win64\EpicWebHelper.exe      N/A      |
+|    0   N/A  N/A            2768    C+G   ...4__8wekyb3d8bbwe\ms-teams.exe      N/A      |
+|    0   N/A  N/A            4676    C+G   ...4__8wekyb3d8bbwe\ms-teams.exe      N/A      |
+|    0   N/A  N/A            9340    C+G   ...\cef.win64\steamwebhelper.exe      N/A      |
+|    0   N/A  N/A            9472    C+G   C:\Windows\explorer.exe               N/A      |
+|    0   N/A  N/A            9488    C+G   ...y\StartMenuExperienceHost.exe      N/A      |
+|    0   N/A  N/A            9548    C+G   ...indows\System32\ShellHost.exe      N/A      |
+|    0   N/A  N/A            9740    C+G   ...2txyewy\CrossDeviceResume.exe      N/A      |
+|    0   N/A  N/A           10312    C+G   ...IA App\CEF\NVIDIA Overlay.exe      N/A      |
+|    0   N/A  N/A           11228    C+G   ...IA App\CEF\NVIDIA Overlay.exe      N/A      |
+|    0   N/A  N/A           11492    C+G   ..._cw5n1h2txyewy\SearchHost.exe      N/A      |
+|    0   N/A  N/A           13148    C+G   ...1g1gvanyjgm\WhatsApp.Root.exe      N/A      |
+|    0   N/A  N/A           13204    C+G   ...lpaper_engine\wallpaper64.exe      N/A      |
+|    0   N/A  N/A           14328    C+G   ...\codex-computer-use-swift.exe      N/A      |
+|    0   N/A  N/A           14700    C+G   ....0.4283.45\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           15432    C+G   ...4__8wekyb3d8bbwe\ms-teams.exe      N/A      |
+|    0   N/A  N/A           15468    C+G   ....0.4283.45\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           15876    C+G   ...utiplayer\dnmultiplayerex.exe      N/A      |
+|    0   N/A  N/A           16676    C+G   ...8bbwe\PhoneExperienceHost.exe      N/A      |
+|    0   N/A  N/A           16784    C+G   ...iles\Riot Vanguard\vgtray.exe      N/A      |
+|    0   N/A  N/A           16872    C+G   ...cord\app-1.0.9261\Discord.exe      N/A      |
+|    0   N/A  N/A           17716    C+G   ...ntrolPanel\SystemSettings.exe      N/A      |
+|    0   N/A  N/A           18628    C+G   ...2p2nqsd0c76g0\app\ChatGPT.exe      N/A      |
+|    0   N/A  N/A           20912    C+G   ...ed_copilot\copilotapphost.exe      N/A      |
+|    0   N/A  N/A           21384    C+G   ...Local\Medal\current\Medal.exe      N/A      |
+|    0   N/A  N/A           21852    C+G   ...s\Win64\EpicGamesLauncher.exe      N/A      |
+|    0   N/A  N/A           22132    C+G   ...ayRenderer-Win64-Shipping.exe      N/A      |
+|    0   N/A  N/A           24164      C   ...s\Python\Python313\python.exe      N/A      |
+|    0   N/A  N/A           24960    C+G   ....0.4283.45\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           25628    C+G   ...Browser\Application\brave.exe      N/A      |
+|    0   N/A  N/A           25764    C+G   ...64__zpdnekdrzrea0\Spotify.exe      N/A      |
+|    0   N/A  N/A           27136    C+G   ...App_cw5n1h2txyewy\LockApp.exe      N/A      |
+|    0   N/A  N/A           29056    C+G   ...Browser\Application\brave.exe      N/A      |
+|    0   N/A  N/A           30580    C+G   ...em32\ApplicationFrameHost.exe      N/A      |
+|    0   N/A  N/A           30880    C+G   ...-2642.2986.1\MedalEncoder.exe      N/A      |
+|    0   N/A  N/A           33360    C+G   ...ms\Microsoft VS Code\Code.exe      N/A      |
+|    0   N/A  N/A           38272      C   ...s\Python\Python313\python.exe      N/A      |
 +-----------------------------------------------------------------------------------------+

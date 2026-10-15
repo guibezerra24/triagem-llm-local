@@ -68,7 +68,7 @@ def main():
         f"- Atualizações do otimizador por experimento: **{exp['training']['optimizer_steps']}**. Dispositivo **{exp['training']['device']}**, precisão **{exp['training']['dtype']}**.\n",
         "- A loss supervisiona somente tokens da resposta e do encerramento da conversa. Os prompts são mascarados com -100.\n",
         "\n![Loss durante os dois treinamentos](loss.png)\n",
-        "## Evidências visuais\n\n![GPU e diagnóstico dentro do VSCode](gpu_vscode.jpg)\n\n![Frontend local com inferência na GPU](frontend.jpg)\n",
+        "## Evidências visuais\n\n![GPU e diagnóstico dentro do VSCode](gpu_vscode.png)\n\n![Frontend local com inferência na GPU](frontend.jpg)\n",
         "## Limitações e conclusão\n",
         "O ajuste melhorou as métricas observadas neste teste sintético pequeno. Isso não estabelece desempenho em chamados reais. Uma seed, frases curtas e classes balanceadas não permitem estimar a robustez em produção. Categorias ambíguas, múltiplos problemas, dados fora do escopo e ataques por prompt não foram avaliados sistematicamente. A loss menor do segundo ajuste não garantiu melhor F1 de validação.\n",
         "A latência mede geração sincronizada com CUDA, sem warmup separado; o primeiro exemplo pode incluir inicialização. Não inclui download, carregamento dos pesos nem tempo de transporte do frontend. O adaptador adiciona operações ao modelo, e a comparação de velocidade exige repetições controladas.\n",

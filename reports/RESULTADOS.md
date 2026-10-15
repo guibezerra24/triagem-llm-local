@@ -95,7 +95,7 @@ As saídas brutas, IDs, dispositivo e latência de cada exemplo estão nos JSONs
 
 ## Evidências visuais
 
-![GPU e diagnóstico dentro do VSCode](gpu_vscode.jpg)
+![GPU e diagnóstico dentro do VSCode](gpu_vscode.png)
 
 ![Frontend local com inferência na GPU](frontend.jpg)
 
