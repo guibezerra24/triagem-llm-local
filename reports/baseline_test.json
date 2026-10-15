@@ -1,0 +1,307 @@
+{
+  "metrics": {
+    "n": 24,
+    "accuracy": 0.4583333333333333,
+    "macro_f1": 0.41277472527472525,
+    "valid_rate": 1.0,
+    "mean_seconds": 0.1371556416668227,
+    "per_class": {
+      "ACESSO": {
+        "precision": 0.5,
+        "recall": 0.16666666666666666,
+        "f1": 0.25,
+        "support": 6
+      },
+      "REDE": {
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "support": 6
+      },
+      "SOFTWARE": {
+        "precision": 0.35714285714285715,
+        "recall": 0.8333333333333334,
+        "f1": 0.5,
+        "support": 6
+      },
+      "HARDWARE": {
+        "precision": 0.5714285714285714,
+        "recall": 0.6666666666666666,
+        "f1": 0.6153846153846153,
+        "support": 6
+      }
+    },
+    "confusion_matrix": {
+      "ACESSO": {
+        "ACESSO": 1,
+        "REDE": 0,
+        "SOFTWARE": 3,
+        "HARDWARE": 2,
+        "INVALIDO": 0
+      },
+      "REDE": {
+        "ACESSO": 0,
+        "REDE": 1,
+        "SOFTWARE": 5,
+        "HARDWARE": 0,
+        "INVALIDO": 0
+      },
+      "SOFTWARE": {
+        "ACESSO": 0,
+        "REDE": 0,
+        "SOFTWARE": 5,
+        "HARDWARE": 1,
+        "INVALIDO": 0
+      },
+      "HARDWARE": {
+        "ACESSO": 1,
+        "REDE": 0,
+        "SOFTWARE": 1,
+        "HARDWARE": 4,
+        "INVALIDO": 0
+      }
+    }
+  },
+  "records": [
+    {
+      "id": "test_acesso_01",
+      "text": "Nao lembro mais a credencial usada para entrar no RH.",
+      "label": "ACESSO",
+      "response": "HARDWARE",
+      "prediction": "HARDWARE",
+      "seconds": 0.18261300000085612,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_acesso_02",
+      "text": "Um colega novo precisa de um usuario no sistema.",
+      "label": "ACESSO",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.10991530000137573,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_acesso_03",
+      "text": "Meu perfil permite visualizar, mas preciso de autorizacao para alterar dados.",
+      "label": "ACESSO",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.10809279999921273,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_acesso_04",
+      "text": "Perdi o dispositivo que gera os codigos de login.",
+      "label": "ACESSO",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.11150110000016866,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_acesso_05",
+      "text": "O portal recusa a entrada porque a conta venceu.",
+      "label": "ACESSO",
+      "response": "HARDWARE",
+      "prediction": "HARDWARE",
+      "seconds": 0.19113719999950263,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_acesso_06",
+      "text": "Solicito revogar as permissoes de uma conta antiga.",
+      "label": "ACESSO",
+      "response": "ACESSO",
+      "prediction": "ACESSO",
+      "seconds": 0.17851040000095963,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_rede_01",
+      "text": "Toda a equipe ficou sem acesso a sites ao mesmo tempo.",
+      "label": "REDE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.1060232999989239,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_rede_02",
+      "text": "O notebook se conecta ao ponto sem fio mas fica sem internet.",
+      "label": "REDE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.10832240000127058,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_rede_03",
+      "text": "A ligacao com a rede da matriz cai de tempos em tempos.",
+      "label": "REDE",
+      "response": "REDE",
+      "prediction": "REDE",
+      "seconds": 0.1429150000003574,
+      "new_tokens": 3,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_rede_04",
+      "text": "Ha muita perda de pacotes entre os dois predios.",
+      "label": "REDE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.10833409999941068,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_rede_05",
+      "text": "Nenhuma maquina recebe IP automaticamente nesta sub-rede.",
+      "label": "REDE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.10637260000112292,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_rede_06",
+      "text": "O sinal wireless nao chega na recepcao.",
+      "label": "REDE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.10430489999998827,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_software_01",
+      "text": "O aplicativo de contabilidade encerra quando gero o balanco.",
+      "label": "SOFTWARE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.10431070000049658,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_software_02",
+      "text": "A atualizacao do programa de edicao retorna um erro.",
+      "label": "SOFTWARE",
+      "response": "HARDWARE",
+      "prediction": "HARDWARE",
+      "seconds": 0.18320630000016536,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_software_03",
+      "text": "Ao clicar em salvar no editor, o documento desaparece e o aplicativo trava.",
+      "label": "SOFTWARE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.11290069999995467,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_software_04",
+      "text": "O visualizador de imagens apresenta uma excecao ao carregar fotos.",
+      "label": "SOFTWARE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.10985110000001441,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_software_05",
+      "text": "Preciso instalar o utilitario de compactacao de arquivos.",
+      "label": "SOFTWARE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.10808970000107365,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_software_06",
+      "text": "A ferramenta de calendario abre mas fica sem responder.",
+      "label": "SOFTWARE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.10632509999959439,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_hardware_01",
+      "text": "A tecla de espaco se desprendeu do teclado.",
+      "label": "HARDWARE",
+      "response": "HARDWARE",
+      "prediction": "HARDWARE",
+      "seconds": 0.1817418999999063,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_hardware_02",
+      "text": "O visor sofreu uma trinca e ficou com manchas.",
+      "label": "HARDWARE",
+      "response": "HARDWARE",
+      "prediction": "HARDWARE",
+      "seconds": 0.17963589999999385,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_hardware_03",
+      "text": "A ventoinha nao gira e o gabinete esquenta muito.",
+      "label": "HARDWARE",
+      "response": "HARDWARE",
+      "prediction": "HARDWARE",
+      "seconds": 0.18039750000025379,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_hardware_04",
+      "text": "O conector do carregador quebrou dentro do equipamento.",
+      "label": "HARDWARE",
+      "response": "HARDWARE",
+      "prediction": "HARDWARE",
+      "seconds": 0.18092210000031628,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_hardware_05",
+      "text": "O botao esquerdo do mouse afundou e nao retorna.",
+      "label": "HARDWARE",
+      "response": "ACESSO",
+      "prediction": "ACESSO",
+      "seconds": 0.18288939999911236,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "test_hardware_06",
+      "text": "O mecanismo da impressora nao puxa as folhas da bandeja.",
+      "label": "HARDWARE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.10342289999971399,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    }
+  ]
+}

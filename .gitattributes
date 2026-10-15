@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.safetensors binary
+# Preservar os bytes usados pelo manifesto da execucao original.
+configs/experiments.json -text
+data/*.jsonl -text
+src/*.py -text

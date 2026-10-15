@@ -1,0 +1,368 @@
+{
+  "baseline_validation": {
+    "n": 16,
+    "accuracy": 0.625,
+    "macro_f1": 0.5651515151515152,
+    "valid_rate": 1.0,
+    "mean_seconds": 0.5092187812500697,
+    "per_class": {
+      "ACESSO": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "support": 4
+      },
+      "REDE": {
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.3333333333333333,
+        "support": 4
+      },
+      "SOFTWARE": {
+        "precision": 0.5714285714285714,
+        "recall": 1.0,
+        "f1": 0.7272727272727273,
+        "support": 4
+      },
+      "HARDWARE": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "support": 4
+      }
+    },
+    "confusion_matrix": {
+      "ACESSO": {
+        "ACESSO": 1,
+        "REDE": 1,
+        "SOFTWARE": 0,
+        "HARDWARE": 2,
+        "INVALIDO": 0
+      },
+      "REDE": {
+        "ACESSO": 0,
+        "REDE": 1,
+        "SOFTWARE": 3,
+        "HARDWARE": 0,
+        "INVALIDO": 0
+      },
+      "SOFTWARE": {
+        "ACESSO": 0,
+        "REDE": 0,
+        "SOFTWARE": 4,
+        "HARDWARE": 0,
+        "INVALIDO": 0
+      },
+      "HARDWARE": {
+        "ACESSO": 0,
+        "REDE": 0,
+        "SOFTWARE": 0,
+        "HARDWARE": 4,
+        "INVALIDO": 0
+      }
+    }
+  },
+  "experiments": [
+    {
+      "name": "lora_lr1e4",
+      "hyperparameters": {
+        "name": "lora_lr1e4",
+        "learning_rate": 0.0001,
+        "rank": 8,
+        "alpha": 16,
+        "dropout": 0.05
+      },
+      "training": {
+        "seconds": 31.980166600000302,
+        "peak_allocated_mib": 2130.58935546875,
+        "peak_reserved_mib": 2462.0,
+        "trainable_parameters": 540672,
+        "all_parameters": 494573440,
+        "optimizer_steps": 32,
+        "device": "cuda:0",
+        "dtype": "torch.float32"
+      },
+      "validation": {
+        "n": 16,
+        "accuracy": 0.875,
+        "macro_f1": 0.873015873015873,
+        "valid_rate": 1.0,
+        "mean_seconds": 0.1458070937502498,
+        "per_class": {
+          "ACESSO": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "support": 4
+          },
+          "REDE": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "support": 4
+          },
+          "SOFTWARE": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.888888888888889,
+            "support": 4
+          },
+          "HARDWARE": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.888888888888889,
+            "support": 4
+          }
+        },
+        "confusion_matrix": {
+          "ACESSO": {
+            "ACESSO": 3,
+            "REDE": 0,
+            "SOFTWARE": 0,
+            "HARDWARE": 1,
+            "INVALIDO": 0
+          },
+          "REDE": {
+            "ACESSO": 0,
+            "REDE": 3,
+            "SOFTWARE": 1,
+            "HARDWARE": 0,
+            "INVALIDO": 0
+          },
+          "SOFTWARE": {
+            "ACESSO": 0,
+            "REDE": 0,
+            "SOFTWARE": 4,
+            "HARDWARE": 0,
+            "INVALIDO": 0
+          },
+          "HARDWARE": {
+            "ACESSO": 0,
+            "REDE": 0,
+            "SOFTWARE": 0,
+            "HARDWARE": 4,
+            "INVALIDO": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "lora_lr3e4",
+      "hyperparameters": {
+        "name": "lora_lr3e4",
+        "learning_rate": 0.0003,
+        "rank": 8,
+        "alpha": 16,
+        "dropout": 0.05
+      },
+      "training": {
+        "seconds": 30.560422599999583,
+        "peak_allocated_mib": 2130.27685546875,
+        "peak_reserved_mib": 2480.0,
+        "trainable_parameters": 540672,
+        "all_parameters": 494573440,
+        "optimizer_steps": 32,
+        "device": "cuda:0",
+        "dtype": "torch.float32"
+      },
+      "validation": {
+        "n": 16,
+        "accuracy": 0.8125,
+        "macro_f1": 0.7818181818181819,
+        "valid_rate": 1.0,
+        "mean_seconds": 0.17248047499992936,
+        "per_class": {
+          "ACESSO": {
+            "precision": 0.5714285714285714,
+            "recall": 1.0,
+            "f1": 0.7272727272727273,
+            "support": 4
+          },
+          "REDE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "SOFTWARE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "HARDWARE": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4,
+            "support": 4
+          }
+        },
+        "confusion_matrix": {
+          "ACESSO": {
+            "ACESSO": 4,
+            "REDE": 0,
+            "SOFTWARE": 0,
+            "HARDWARE": 0,
+            "INVALIDO": 0
+          },
+          "REDE": {
+            "ACESSO": 0,
+            "REDE": 4,
+            "SOFTWARE": 0,
+            "HARDWARE": 0,
+            "INVALIDO": 0
+          },
+          "SOFTWARE": {
+            "ACESSO": 0,
+            "REDE": 0,
+            "SOFTWARE": 4,
+            "HARDWARE": 0,
+            "INVALIDO": 0
+          },
+          "HARDWARE": {
+            "ACESSO": 3,
+            "REDE": 0,
+            "SOFTWARE": 0,
+            "HARDWARE": 1,
+            "INVALIDO": 0
+          }
+        }
+      }
+    }
+  ],
+  "selected": "lora_lr1e4",
+  "test": {
+    "baseline": {
+      "n": 24,
+      "accuracy": 0.4583333333333333,
+      "macro_f1": 0.41277472527472525,
+      "valid_rate": 1.0,
+      "mean_seconds": 0.1371556416668227,
+      "per_class": {
+        "ACESSO": {
+          "precision": 0.5,
+          "recall": 0.16666666666666666,
+          "f1": 0.25,
+          "support": 6
+        },
+        "REDE": {
+          "precision": 1.0,
+          "recall": 0.16666666666666666,
+          "f1": 0.2857142857142857,
+          "support": 6
+        },
+        "SOFTWARE": {
+          "precision": 0.35714285714285715,
+          "recall": 0.8333333333333334,
+          "f1": 0.5,
+          "support": 6
+        },
+        "HARDWARE": {
+          "precision": 0.5714285714285714,
+          "recall": 0.6666666666666666,
+          "f1": 0.6153846153846153,
+          "support": 6
+        }
+      },
+      "confusion_matrix": {
+        "ACESSO": {
+          "ACESSO": 1,
+          "REDE": 0,
+          "SOFTWARE": 3,
+          "HARDWARE": 2,
+          "INVALIDO": 0
+        },
+        "REDE": {
+          "ACESSO": 0,
+          "REDE": 1,
+          "SOFTWARE": 5,
+          "HARDWARE": 0,
+          "INVALIDO": 0
+        },
+        "SOFTWARE": {
+          "ACESSO": 0,
+          "REDE": 0,
+          "SOFTWARE": 5,
+          "HARDWARE": 1,
+          "INVALIDO": 0
+        },
+        "HARDWARE": {
+          "ACESSO": 1,
+          "REDE": 0,
+          "SOFTWARE": 1,
+          "HARDWARE": 4,
+          "INVALIDO": 0
+        }
+      }
+    },
+    "lora_lr1e4": {
+      "n": 24,
+      "accuracy": 0.8333333333333334,
+      "macro_f1": 0.8292540792540792,
+      "valid_rate": 1.0,
+      "mean_seconds": 0.17352432083339409,
+      "per_class": {
+        "ACESSO": {
+          "precision": 0.8333333333333334,
+          "recall": 0.8333333333333334,
+          "f1": 0.8333333333333334,
+          "support": 6
+        },
+        "REDE": {
+          "precision": 0.8333333333333334,
+          "recall": 0.8333333333333334,
+          "f1": 0.8333333333333334,
+          "support": 6
+        },
+        "SOFTWARE": {
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "f1": 0.923076923076923,
+          "support": 6
+        },
+        "HARDWARE": {
+          "precision": 0.8,
+          "recall": 0.6666666666666666,
+          "f1": 0.7272727272727272,
+          "support": 6
+        }
+      },
+      "confusion_matrix": {
+        "ACESSO": {
+          "ACESSO": 5,
+          "REDE": 1,
+          "SOFTWARE": 0,
+          "HARDWARE": 0,
+          "INVALIDO": 0
+        },
+        "REDE": {
+          "ACESSO": 0,
+          "REDE": 5,
+          "SOFTWARE": 0,
+          "HARDWARE": 1,
+          "INVALIDO": 0
+        },
+        "SOFTWARE": {
+          "ACESSO": 0,
+          "REDE": 0,
+          "SOFTWARE": 6,
+          "HARDWARE": 0,
+          "INVALIDO": 0
+        },
+        "HARDWARE": {
+          "ACESSO": 1,
+          "REDE": 0,
+          "SOFTWARE": 1,
+          "HARDWARE": 4,
+          "INVALIDO": 0
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Dados sinteticos pequenos",
+    "Uma seed",
+    "Nao comprova generalizacao para chamados reais",
+    "Latencia inclui primeira geracao sem warmup separado"
+  ]
+}

@@ -1,0 +1,24 @@
+{"id": "test_acesso_01", "text": "Nao lembro mais a credencial usada para entrar no RH.", "label": "ACESSO"}
+{"id": "test_acesso_02", "text": "Um colega novo precisa de um usuario no sistema.", "label": "ACESSO"}
+{"id": "test_acesso_03", "text": "Meu perfil permite visualizar, mas preciso de autorizacao para alterar dados.", "label": "ACESSO"}
+{"id": "test_acesso_04", "text": "Perdi o dispositivo que gera os codigos de login.", "label": "ACESSO"}
+{"id": "test_acesso_05", "text": "O portal recusa a entrada porque a conta venceu.", "label": "ACESSO"}
+{"id": "test_acesso_06", "text": "Solicito revogar as permissoes de uma conta antiga.", "label": "ACESSO"}
+{"id": "test_rede_01", "text": "Toda a equipe ficou sem acesso a sites ao mesmo tempo.", "label": "REDE"}
+{"id": "test_rede_02", "text": "O notebook se conecta ao ponto sem fio mas fica sem internet.", "label": "REDE"}
+{"id": "test_rede_03", "text": "A ligacao com a rede da matriz cai de tempos em tempos.", "label": "REDE"}
+{"id": "test_rede_04", "text": "Ha muita perda de pacotes entre os dois predios.", "label": "REDE"}
+{"id": "test_rede_05", "text": "Nenhuma maquina recebe IP automaticamente nesta sub-rede.", "label": "REDE"}
+{"id": "test_rede_06", "text": "O sinal wireless nao chega na recepcao.", "label": "REDE"}
+{"id": "test_software_01", "text": "O aplicativo de contabilidade encerra quando gero o balanco.", "label": "SOFTWARE"}
+{"id": "test_software_02", "text": "A atualizacao do programa de edicao retorna um erro.", "label": "SOFTWARE"}
+{"id": "test_software_03", "text": "Ao clicar em salvar no editor, o documento desaparece e o aplicativo trava.", "label": "SOFTWARE"}
+{"id": "test_software_04", "text": "O visualizador de imagens apresenta uma excecao ao carregar fotos.", "label": "SOFTWARE"}
+{"id": "test_software_05", "text": "Preciso instalar o utilitario de compactacao de arquivos.", "label": "SOFTWARE"}
+{"id": "test_software_06", "text": "A ferramenta de calendario abre mas fica sem responder.", "label": "SOFTWARE"}
+{"id": "test_hardware_01", "text": "A tecla de espaco se desprendeu do teclado.", "label": "HARDWARE"}
+{"id": "test_hardware_02", "text": "O visor sofreu uma trinca e ficou com manchas.", "label": "HARDWARE"}
+{"id": "test_hardware_03", "text": "A ventoinha nao gira e o gabinete esquenta muito.", "label": "HARDWARE"}
+{"id": "test_hardware_04", "text": "O conector do carregador quebrou dentro do equipamento.", "label": "HARDWARE"}
+{"id": "test_hardware_05", "text": "O botao esquerdo do mouse afundou e nao retorna.", "label": "HARDWARE"}
+{"id": "test_hardware_06", "text": "O mecanismo da impressora nao puxa as folhas da bandeja.", "label": "HARDWARE"}

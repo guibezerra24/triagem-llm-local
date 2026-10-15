@@ -1,0 +1,10 @@
+{
+  "seconds": 31.980166600000302,
+  "peak_allocated_mib": 2130.58935546875,
+  "peak_reserved_mib": 2462.0,
+  "trainable_parameters": 540672,
+  "all_parameters": 494573440,
+  "optimizer_steps": 32,
+  "device": "cuda:0",
+  "dtype": "torch.float32"
+}

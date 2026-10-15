@@ -1,0 +1,25 @@
+﻿chamado,esperado,original,lora,acertou_lora
+Nao lembro mais a credencial usada para entrar no RH.,ACESSO,HARDWARE,ACESSO,sim
+Um colega novo precisa de um usuario no sistema.,ACESSO,SOFTWARE,ACESSO,sim
+"Meu perfil permite visualizar, mas preciso de autorizacao para alterar dados.",ACESSO,SOFTWARE,ACESSO,sim
+Perdi o dispositivo que gera os codigos de login.,ACESSO,SOFTWARE,REDE,não
+O portal recusa a entrada porque a conta venceu.,ACESSO,HARDWARE,ACESSO,sim
+Solicito revogar as permissoes de uma conta antiga.,ACESSO,ACESSO,ACESSO,sim
+Toda a equipe ficou sem acesso a sites ao mesmo tempo.,REDE,SOFTWARE,HARDWARE,não
+O notebook se conecta ao ponto sem fio mas fica sem internet.,REDE,SOFTWARE,REDE,sim
+A ligacao com a rede da matriz cai de tempos em tempos.,REDE,REDE,REDE,sim
+Ha muita perda de pacotes entre os dois predios.,REDE,SOFTWARE,REDE,sim
+Nenhuma maquina recebe IP automaticamente nesta sub-rede.,REDE,SOFTWARE,REDE,sim
+O sinal wireless nao chega na recepcao.,REDE,SOFTWARE,REDE,sim
+O aplicativo de contabilidade encerra quando gero o balanco.,SOFTWARE,SOFTWARE,SOFTWARE,sim
+A atualizacao do programa de edicao retorna um erro.,SOFTWARE,HARDWARE,SOFTWARE,sim
+"Ao clicar em salvar no editor, o documento desaparece e o aplicativo trava.",SOFTWARE,SOFTWARE,SOFTWARE,sim
+O visualizador de imagens apresenta uma excecao ao carregar fotos.,SOFTWARE,SOFTWARE,SOFTWARE,sim
+Preciso instalar o utilitario de compactacao de arquivos.,SOFTWARE,SOFTWARE,SOFTWARE,sim
+A ferramenta de calendario abre mas fica sem responder.,SOFTWARE,SOFTWARE,SOFTWARE,sim
+A tecla de espaco se desprendeu do teclado.,HARDWARE,HARDWARE,HARDWARE,sim
+O visor sofreu uma trinca e ficou com manchas.,HARDWARE,HARDWARE,HARDWARE,sim
+A ventoinha nao gira e o gabinete esquenta muito.,HARDWARE,HARDWARE,HARDWARE,sim
+O conector do carregador quebrou dentro do equipamento.,HARDWARE,HARDWARE,HARDWARE,sim
+O botao esquerdo do mouse afundou e nao retorna.,HARDWARE,ACESSO,ACESSO,não
+O mecanismo da impressora nao puxa as folhas da bandeja.,HARDWARE,SOFTWARE,SOFTWARE,não

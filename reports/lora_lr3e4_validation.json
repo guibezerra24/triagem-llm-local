@@ -1,0 +1,227 @@
+{
+  "metrics": {
+    "n": 16,
+    "accuracy": 0.8125,
+    "macro_f1": 0.7818181818181819,
+    "valid_rate": 1.0,
+    "mean_seconds": 0.17248047499992936,
+    "per_class": {
+      "ACESSO": {
+        "precision": 0.5714285714285714,
+        "recall": 1.0,
+        "f1": 0.7272727272727273,
+        "support": 4
+      },
+      "REDE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4
+      },
+      "SOFTWARE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4
+      },
+      "HARDWARE": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "support": 4
+      }
+    },
+    "confusion_matrix": {
+      "ACESSO": {
+        "ACESSO": 4,
+        "REDE": 0,
+        "SOFTWARE": 0,
+        "HARDWARE": 0,
+        "INVALIDO": 0
+      },
+      "REDE": {
+        "ACESSO": 0,
+        "REDE": 4,
+        "SOFTWARE": 0,
+        "HARDWARE": 0,
+        "INVALIDO": 0
+      },
+      "SOFTWARE": {
+        "ACESSO": 0,
+        "REDE": 0,
+        "SOFTWARE": 4,
+        "HARDWARE": 0,
+        "INVALIDO": 0
+      },
+      "HARDWARE": {
+        "ACESSO": 3,
+        "REDE": 0,
+        "SOFTWARE": 0,
+        "HARDWARE": 1,
+        "INVALIDO": 0
+      }
+    }
+  },
+  "records": [
+    {
+      "id": "validation_acesso_01",
+      "text": "Meu usuario exige troca de credencial para entrar.",
+      "label": "ACESSO",
+      "response": "ACESSO",
+      "prediction": "ACESSO",
+      "seconds": 0.20013169999947422,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_acesso_02",
+      "text": "Preciso habilitar meu perfil no painel de vendas.",
+      "label": "ACESSO",
+      "response": "ACESSO",
+      "prediction": "ACESSO",
+      "seconds": 0.20494220000000496,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_acesso_03",
+      "text": "A verificacao em duas etapas rejeita meu codigo.",
+      "label": "ACESSO",
+      "response": "ACESSO",
+      "prediction": "ACESSO",
+      "seconds": 0.2031592000003002,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_acesso_04",
+      "text": "Solicito recuperacao da minha conta de trabalho.",
+      "label": "ACESSO",
+      "response": "ACESSO",
+      "prediction": "ACESSO",
+      "seconds": 0.20534650000081456,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_rede_01",
+      "text": "Os computadores do andar perderam conexao com a internet.",
+      "label": "REDE",
+      "response": "REDE",
+      "prediction": "REDE",
+      "seconds": 0.15888499999891792,
+      "new_tokens": 3,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_rede_02",
+      "text": "A rede sem fio cai quando entro na sala de reuniao.",
+      "label": "REDE",
+      "response": "REDE",
+      "prediction": "REDE",
+      "seconds": 0.16245139999955427,
+      "new_tokens": 3,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_rede_03",
+      "text": "O servidor DNS corporativo esta inacessivel pela rede.",
+      "label": "REDE",
+      "response": "REDE",
+      "prediction": "REDE",
+      "seconds": 0.16307989999950223,
+      "new_tokens": 3,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_rede_04",
+      "text": "O tunel VPN interrompe a conexao repetidamente.",
+      "label": "REDE",
+      "response": "REDE",
+      "prediction": "REDE",
+      "seconds": 0.16076350000003004,
+      "new_tokens": 3,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_software_01",
+      "text": "O aplicativo de apresentacoes fecha quando adiciono um slide.",
+      "label": "SOFTWARE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.11021419999997306,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_software_02",
+      "text": "A instalacao do editor de video nao termina.",
+      "label": "SOFTWARE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.11321760000100767,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_software_03",
+      "text": "O navegador exibe uma falha interna ao iniciar.",
+      "label": "SOFTWARE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.11697180000010121,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_software_04",
+      "text": "O programa de desenho congela ao importar uma imagem.",
+      "label": "SOFTWARE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.1137799999996787,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_hardware_01",
+      "text": "Derrubei agua no teclado e as teclas nao funcionam.",
+      "label": "HARDWARE",
+      "response": "ACESSO",
+      "prediction": "ACESSO",
+      "seconds": 0.2161006999995152,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_hardware_02",
+      "text": "A fonte do desktop queimou apos uma queda de energia.",
+      "label": "HARDWARE",
+      "response": "HARDWARE",
+      "prediction": "HARDWARE",
+      "seconds": 0.2026119000001927,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_hardware_03",
+      "text": "O cooler da maquina esta travado.",
+      "label": "HARDWARE",
+      "response": "ACESSO",
+      "prediction": "ACESSO",
+      "seconds": 0.2048981999996613,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_hardware_04",
+      "text": "A bateria do computador portatil esta estufada.",
+      "label": "HARDWARE",
+      "response": "ACESSO",
+      "prediction": "ACESSO",
+      "seconds": 0.2231338000001415,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    }
+  ]
+}

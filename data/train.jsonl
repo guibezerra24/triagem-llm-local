@@ -1,0 +1,64 @@
+{"id": "train_acesso_01", "text": "Esqueci a senha do portal da empresa.", "label": "ACESSO"}
+{"id": "train_acesso_02", "text": "Meu login foi bloqueado depois de errar a senha.", "label": "ACESSO"}
+{"id": "train_acesso_03", "text": "Preciso de permissao para acessar a pasta financeira.", "label": "ACESSO"}
+{"id": "train_acesso_04", "text": "Minha conta corporativa foi desativada.", "label": "ACESSO"}
+{"id": "train_acesso_05", "text": "O codigo de autenticacao em duas etapas nao chega.", "label": "ACESSO"}
+{"id": "train_acesso_06", "text": "Quero redefinir a senha do email.", "label": "ACESSO"}
+{"id": "train_acesso_07", "text": "Nao tenho autorizacao para abrir o painel administrativo.", "label": "ACESSO"}
+{"id": "train_acesso_08", "text": "Troquei de celular e perdi o autenticador da conta.", "label": "ACESSO"}
+{"id": "train_acesso_09", "text": "Recebo acesso negado ao entrar com meu usuario.", "label": "ACESSO"}
+{"id": "train_acesso_10", "text": "Meu perfil nao permite editar o cadastro.", "label": "ACESSO"}
+{"id": "train_acesso_11", "text": "O sistema diz que minha senha expirou.", "label": "ACESSO"}
+{"id": "train_acesso_12", "text": "Preciso criar uma conta para um novo funcionario.", "label": "ACESSO"}
+{"id": "train_acesso_13", "text": "Quero remover o acesso de um colaborador desligado.", "label": "ACESSO"}
+{"id": "train_acesso_14", "text": "Nao consigo desbloquear meu usuario no dominio.", "label": "ACESSO"}
+{"id": "train_acesso_15", "text": "Solicito liberacao do meu perfil para consultar relatorios.", "label": "ACESSO"}
+{"id": "train_acesso_16", "text": "Meu token de verificacao de identidade venceu.", "label": "ACESSO"}
+{"id": "train_rede_01", "text": "A internet caiu em todo o escritorio.", "label": "REDE"}
+{"id": "train_rede_02", "text": "O Wi-Fi nao conecta no notebook.", "label": "REDE"}
+{"id": "train_rede_03", "text": "A conexao de rede fica oscilando durante as reunioes.", "label": "REDE"}
+{"id": "train_rede_04", "text": "Nenhum site abre na rede da empresa.", "label": "REDE"}
+{"id": "train_rede_05", "text": "O cabo de rede esta conectado mas nao tenho internet.", "label": "REDE"}
+{"id": "train_rede_06", "text": "A VPN desconecta a cada cinco minutos.", "label": "REDE"}
+{"id": "train_rede_07", "text": "O computador nao recebe endereco IP do roteador.", "label": "REDE"}
+{"id": "train_rede_08", "text": "O sinal do Wi-Fi esta muito fraco na sala.", "label": "REDE"}
+{"id": "train_rede_09", "text": "O DNS da rede nao resolve os enderecos dos sites.", "label": "REDE"}
+{"id": "train_rede_10", "text": "A internet ficou lenta em todas as maquinas.", "label": "REDE"}
+{"id": "train_rede_11", "text": "A conexao por Ethernet aparece como limitada.", "label": "REDE"}
+{"id": "train_rede_12", "text": "O roteador nao distribui internet para os usuarios.", "label": "REDE"}
+{"id": "train_rede_13", "text": "Tenho perda de pacotes na conexao corporativa.", "label": "REDE"}
+{"id": "train_rede_14", "text": "O ponto de acesso sem fio desapareceu da lista.", "label": "REDE"}
+{"id": "train_rede_15", "text": "A rede interna nao alcanca o servidor por IP.", "label": "REDE"}
+{"id": "train_rede_16", "text": "Depois da troca do modem ficamos sem conexao.", "label": "REDE"}
+{"id": "train_software_01", "text": "O editor de texto fecha sozinho ao abrir arquivos.", "label": "SOFTWARE"}
+{"id": "train_software_02", "text": "Preciso instalar o aplicativo de videoconferencia.", "label": "SOFTWARE"}
+{"id": "train_software_03", "text": "A planilha mostra erro e o programa trava.", "label": "SOFTWARE"}
+{"id": "train_software_04", "text": "A atualizacao do navegador falhou.", "label": "SOFTWARE"}
+{"id": "train_software_05", "text": "O sistema de estoque apresenta uma excecao na tela.", "label": "SOFTWARE"}
+{"id": "train_software_06", "text": "O aplicativo de email nao inicia depois da atualizacao.", "label": "SOFTWARE"}
+{"id": "train_software_07", "text": "Quero desinstalar uma versao antiga do editor de imagens.", "label": "SOFTWARE"}
+{"id": "train_software_08", "text": "O leitor de PDF encerra ao abrir um documento.", "label": "SOFTWARE"}
+{"id": "train_software_09", "text": "O instalador do programa para com um erro.", "label": "SOFTWARE"}
+{"id": "train_software_10", "text": "O aplicativo fica congelado ao salvar o projeto.", "label": "SOFTWARE"}
+{"id": "train_software_11", "text": "A nova versao do sistema operacional nao conclui a atualizacao.", "label": "SOFTWARE"}
+{"id": "train_software_12", "text": "A ferramenta de desenho nao exporta os arquivos.", "label": "SOFTWARE"}
+{"id": "train_software_13", "text": "O software de reuniao abre uma janela em branco.", "label": "SOFTWARE"}
+{"id": "train_software_14", "text": "O programa de notas duplica os registros ao salvar.", "label": "SOFTWARE"}
+{"id": "train_software_15", "text": "A extensao do navegador provoca erro na pagina.", "label": "SOFTWARE"}
+{"id": "train_software_16", "text": "O aplicativo de gestao apresenta falha de execucao.", "label": "SOFTWARE"}
+{"id": "train_hardware_01", "text": "O teclado parou de reconhecer varias teclas.", "label": "HARDWARE"}
+{"id": "train_hardware_02", "text": "O monitor nao liga mesmo conectado na tomada.", "label": "HARDWARE"}
+{"id": "train_hardware_03", "text": "O mouse esta com o botao fisico quebrado.", "label": "HARDWARE"}
+{"id": "train_hardware_04", "text": "O computador nao liga e a fonte nao acende.", "label": "HARDWARE"}
+{"id": "train_hardware_05", "text": "O ventilador do notebook faz muito barulho.", "label": "HARDWARE"}
+{"id": "train_hardware_06", "text": "A bateria do notebook nao segura carga.", "label": "HARDWARE"}
+{"id": "train_hardware_07", "text": "O disco rigido faz estalos e nao e detectado na BIOS.", "label": "HARDWARE"}
+{"id": "train_hardware_08", "text": "A tela do notebook esta quebrada.", "label": "HARDWARE"}
+{"id": "train_hardware_09", "text": "A porta USB esta fisicamente solta.", "label": "HARDWARE"}
+{"id": "train_hardware_10", "text": "O carregador apresenta fio partido.", "label": "HARDWARE"}
+{"id": "train_hardware_11", "text": "A impressora esta com papel preso no mecanismo.", "label": "HARDWARE"}
+{"id": "train_hardware_12", "text": "O computador superaquece e desliga.", "label": "HARDWARE"}
+{"id": "train_hardware_13", "text": "O pente de memoria RAM apresenta defeito no teste fisico.", "label": "HARDWARE"}
+{"id": "train_hardware_14", "text": "O cabo de energia do monitor esta danificado.", "label": "HARDWARE"}
+{"id": "train_hardware_15", "text": "O microfone tem a haste quebrada.", "label": "HARDWARE"}
+{"id": "train_hardware_16", "text": "A dobradica do notebook se soltou da carcaca.", "label": "HARDWARE"}

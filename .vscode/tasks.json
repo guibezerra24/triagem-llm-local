@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label": "GPU: verificar CUDA e backward", "type": "process", "command": "${command:python.interpreterPath}", "args": ["-m", "src.gpu_check"], "problemMatcher": []},
+    {"label": "LLM: treinar e avaliar na GPU", "type": "process", "command": "${command:python.interpreterPath}", "args": ["-m", "src.run_experiments", "--resume"], "problemMatcher": []},
+    {"label": "LLM: abrir frontend", "type": "process", "command": "${command:python.interpreterPath}", "args": ["app.py"], "problemMatcher": []}
+  ]
+}

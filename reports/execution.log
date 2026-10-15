@@ -1,0 +1,168 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+C:\Users\guilh\Documents\Codex\2026-10-15\treinar-uma-llm-local-e-apresentar\work\.venv\Lib\site-packages\transformers\generation\configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+C:\Users\guilh\Documents\Codex\2026-10-15\treinar-uma-llm-local-e-apresentar\work\.venv\Lib\site-packages\transformers\generation\configuration_utils.py:636: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+C:\Users\guilh\Documents\Codex\2026-10-15\treinar-uma-llm-local-e-apresentar\work\.venv\Lib\site-packages\transformers\generation\configuration_utils.py:653: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+baseline validation 1/16: ACESSO -> ACESSO
+baseline validation 2/16: ACESSO -> HARDWARE
+baseline validation 3/16: ACESSO -> HARDWARE
+baseline validation 4/16: ACESSO -> REDE
+baseline validation 5/16: REDE -> SOFTWARE
+baseline validation 6/16: REDE -> REDE
+baseline validation 7/16: REDE -> SOFTWARE
+baseline validation 8/16: REDE -> SOFTWARE
+baseline validation 9/16: SOFTWARE -> SOFTWARE
+baseline validation 10/16: SOFTWARE -> SOFTWARE
+baseline validation 11/16: SOFTWARE -> SOFTWARE
+baseline validation 12/16: SOFTWARE -> SOFTWARE
+baseline validation 13/16: HARDWARE -> HARDWARE
+baseline validation 14/16: HARDWARE -> HARDWARE
+baseline validation 15/16: HARDWARE -> HARDWARE
+baseline validation 16/16: HARDWARE -> HARDWARE
+lora_lr1e4 epoch=1 step=1 loss=0.7308
+lora_lr1e4 epoch=1 step=2 loss=0.5208
+lora_lr1e4 epoch=1 step=3 loss=0.4300
+lora_lr1e4 epoch=1 step=4 loss=0.9597
+lora_lr1e4 epoch=1 step=5 loss=0.3534
+lora_lr1e4 epoch=1 step=6 loss=0.4226
+lora_lr1e4 epoch=1 step=7 loss=0.6483
+lora_lr1e4 epoch=1 step=8 loss=0.4272
+lora_lr1e4 epoch=1 step=9 loss=0.7624
+lora_lr1e4 epoch=1 step=10 loss=0.4900
+lora_lr1e4 epoch=1 step=11 loss=0.2879
+lora_lr1e4 epoch=1 step=12 loss=0.1184
+lora_lr1e4 epoch=1 step=13 loss=0.1656
+lora_lr1e4 epoch=1 step=14 loss=0.2160
+lora_lr1e4 epoch=1 step=15 loss=0.5523
+lora_lr1e4 epoch=1 step=16 loss=0.3547
+lora_lr1e4 epoch=2 step=17 loss=0.2924
+lora_lr1e4 epoch=2 step=18 loss=0.4421
+lora_lr1e4 epoch=2 step=19 loss=0.1920
+lora_lr1e4 epoch=2 step=20 loss=0.1098
+lora_lr1e4 epoch=2 step=21 loss=0.3782
+lora_lr1e4 epoch=2 step=22 loss=0.2378
+lora_lr1e4 epoch=2 step=23 loss=0.2310
+lora_lr1e4 epoch=2 step=24 loss=0.1808
+lora_lr1e4 epoch=2 step=25 loss=0.2024
+lora_lr1e4 epoch=2 step=26 loss=0.3079
+lora_lr1e4 epoch=2 step=27 loss=0.1277
+lora_lr1e4 epoch=2 step=28 loss=0.1207
+lora_lr1e4 epoch=2 step=29 loss=0.1819
+lora_lr1e4 epoch=2 step=30 loss=0.1151
+lora_lr1e4 epoch=2 step=31 loss=0.0897
+lora_lr1e4 epoch=2 step=32 loss=0.1522
+lora_lr1e4 validation 1/16: ACESSO -> ACESSO
+lora_lr1e4 validation 2/16: ACESSO -> ACESSO
+lora_lr1e4 validation 3/16: ACESSO -> HARDWARE
+lora_lr1e4 validation 4/16: ACESSO -> ACESSO
+lora_lr1e4 validation 5/16: REDE -> REDE
+lora_lr1e4 validation 6/16: REDE -> REDE
+lora_lr1e4 validation 7/16: REDE -> REDE
+lora_lr1e4 validation 8/16: REDE -> SOFTWARE
+lora_lr1e4 validation 9/16: SOFTWARE -> SOFTWARE
+lora_lr1e4 validation 10/16: SOFTWARE -> SOFTWARE
+lora_lr1e4 validation 11/16: SOFTWARE -> SOFTWARE
+lora_lr1e4 validation 12/16: SOFTWARE -> SOFTWARE
+lora_lr1e4 validation 13/16: HARDWARE -> HARDWARE
+lora_lr1e4 validation 14/16: HARDWARE -> HARDWARE
+lora_lr1e4 validation 15/16: HARDWARE -> HARDWARE
+lora_lr1e4 validation 16/16: HARDWARE -> HARDWARE
+lora_lr3e4 epoch=1 step=1 loss=0.7308
+lora_lr3e4 epoch=1 step=2 loss=0.7573
+lora_lr3e4 epoch=1 step=3 loss=0.6152
+lora_lr3e4 epoch=1 step=4 loss=0.8349
+lora_lr3e4 epoch=1 step=5 loss=0.3640
+lora_lr3e4 epoch=1 step=6 loss=0.5465
+lora_lr3e4 epoch=1 step=7 loss=0.7741
+lora_lr3e4 epoch=1 step=8 loss=0.3789
+lora_lr3e4 epoch=1 step=9 loss=0.7645
+lora_lr3e4 epoch=1 step=10 loss=0.4306
+lora_lr3e4 epoch=1 step=11 loss=0.2009
+lora_lr3e4 epoch=1 step=12 loss=0.1237
+lora_lr3e4 epoch=1 step=13 loss=0.1719
+lora_lr3e4 epoch=1 step=14 loss=0.2247
+lora_lr3e4 epoch=1 step=15 loss=0.2950
+lora_lr3e4 epoch=1 step=16 loss=0.1504
+lora_lr3e4 epoch=2 step=17 loss=0.1597
+lora_lr3e4 epoch=2 step=18 loss=0.2433
+lora_lr3e4 epoch=2 step=19 loss=0.0609
+lora_lr3e4 epoch=2 step=20 loss=0.0271
+lora_lr3e4 epoch=2 step=21 loss=0.1316
+lora_lr3e4 epoch=2 step=22 loss=0.0664
+lora_lr3e4 epoch=2 step=23 loss=0.0386
+lora_lr3e4 epoch=2 step=24 loss=0.0356
+lora_lr3e4 epoch=2 step=25 loss=0.1418
+lora_lr3e4 epoch=2 step=26 loss=0.3245
+lora_lr3e4 epoch=2 step=27 loss=0.2900
+lora_lr3e4 epoch=2 step=28 loss=0.0111
+lora_lr3e4 epoch=2 step=29 loss=0.0249
+lora_lr3e4 epoch=2 step=30 loss=0.1551
+lora_lr3e4 epoch=2 step=31 loss=0.0311
+lora_lr3e4 epoch=2 step=32 loss=0.0726
+lora_lr3e4 validation 1/16: ACESSO -> ACESSO
+lora_lr3e4 validation 2/16: ACESSO -> ACESSO
+lora_lr3e4 validation 3/16: ACESSO -> ACESSO
+lora_lr3e4 validation 4/16: ACESSO -> ACESSO
+lora_lr3e4 validation 5/16: REDE -> REDE
+lora_lr3e4 validation 6/16: REDE -> REDE
+lora_lr3e4 validation 7/16: REDE -> REDE
+lora_lr3e4 validation 8/16: REDE -> REDE
+lora_lr3e4 validation 9/16: SOFTWARE -> SOFTWARE
+lora_lr3e4 validation 10/16: SOFTWARE -> SOFTWARE
+lora_lr3e4 validation 11/16: SOFTWARE -> SOFTWARE
+lora_lr3e4 validation 12/16: SOFTWARE -> SOFTWARE
+lora_lr3e4 validation 13/16: HARDWARE -> ACESSO
+lora_lr3e4 validation 14/16: HARDWARE -> HARDWARE
+lora_lr3e4 validation 15/16: HARDWARE -> ACESSO
+lora_lr3e4 validation 16/16: HARDWARE -> ACESSO
+baseline test 1/24: ACESSO -> HARDWARE
+baseline test 2/24: ACESSO -> SOFTWARE
+baseline test 3/24: ACESSO -> SOFTWARE
+baseline test 4/24: ACESSO -> SOFTWARE
+baseline test 5/24: ACESSO -> HARDWARE
+baseline test 6/24: ACESSO -> ACESSO
+baseline test 7/24: REDE -> SOFTWARE
+baseline test 8/24: REDE -> SOFTWARE
+baseline test 9/24: REDE -> REDE
+baseline test 10/24: REDE -> SOFTWARE
+baseline test 11/24: REDE -> SOFTWARE
+baseline test 12/24: REDE -> SOFTWARE
+baseline test 13/24: SOFTWARE -> SOFTWARE
+baseline test 14/24: SOFTWARE -> HARDWARE
+baseline test 15/24: SOFTWARE -> SOFTWARE
+baseline test 16/24: SOFTWARE -> SOFTWARE
+baseline test 17/24: SOFTWARE -> SOFTWARE
+baseline test 18/24: SOFTWARE -> SOFTWARE
+baseline test 19/24: HARDWARE -> HARDWARE
+baseline test 20/24: HARDWARE -> HARDWARE
+baseline test 21/24: HARDWARE -> HARDWARE
+baseline test 22/24: HARDWARE -> HARDWARE
+baseline test 23/24: HARDWARE -> ACESSO
+baseline test 24/24: HARDWARE -> SOFTWARE
+lora_lr1e4 test 1/24: ACESSO -> ACESSO
+lora_lr1e4 test 2/24: ACESSO -> ACESSO
+lora_lr1e4 test 3/24: ACESSO -> ACESSO
+lora_lr1e4 test 4/24: ACESSO -> REDE
+lora_lr1e4 test 5/24: ACESSO -> ACESSO
+lora_lr1e4 test 6/24: ACESSO -> ACESSO
+lora_lr1e4 test 7/24: REDE -> HARDWARE
+lora_lr1e4 test 8/24: REDE -> REDE
+lora_lr1e4 test 9/24: REDE -> REDE
+lora_lr1e4 test 10/24: REDE -> REDE
+lora_lr1e4 test 11/24: REDE -> REDE
+lora_lr1e4 test 12/24: REDE -> REDE
+lora_lr1e4 test 13/24: SOFTWARE -> SOFTWARE
+lora_lr1e4 test 14/24: SOFTWARE -> SOFTWARE
+lora_lr1e4 test 15/24: SOFTWARE -> SOFTWARE
+lora_lr1e4 test 16/24: SOFTWARE -> SOFTWARE
+lora_lr1e4 test 17/24: SOFTWARE -> SOFTWARE
+lora_lr1e4 test 18/24: SOFTWARE -> SOFTWARE
+lora_lr1e4 test 19/24: HARDWARE -> HARDWARE
+lora_lr1e4 test 20/24: HARDWARE -> HARDWARE
+lora_lr1e4 test 21/24: HARDWARE -> HARDWARE
+lora_lr1e4 test 22/24: HARDWARE -> HARDWARE
+lora_lr1e4 test 23/24: HARDWARE -> ACESSO
+lora_lr1e4 test 24/24: HARDWARE -> SOFTWARE
+Concluido: reports/summary.json

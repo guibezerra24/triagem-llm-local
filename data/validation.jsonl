@@ -1,0 +1,16 @@
+{"id": "validation_acesso_01", "text": "Meu usuario exige troca de credencial para entrar.", "label": "ACESSO"}
+{"id": "validation_acesso_02", "text": "Preciso habilitar meu perfil no painel de vendas.", "label": "ACESSO"}
+{"id": "validation_acesso_03", "text": "A verificacao em duas etapas rejeita meu codigo.", "label": "ACESSO"}
+{"id": "validation_acesso_04", "text": "Solicito recuperacao da minha conta de trabalho.", "label": "ACESSO"}
+{"id": "validation_rede_01", "text": "Os computadores do andar perderam conexao com a internet.", "label": "REDE"}
+{"id": "validation_rede_02", "text": "A rede sem fio cai quando entro na sala de reuniao.", "label": "REDE"}
+{"id": "validation_rede_03", "text": "O servidor DNS corporativo esta inacessivel pela rede.", "label": "REDE"}
+{"id": "validation_rede_04", "text": "O tunel VPN interrompe a conexao repetidamente.", "label": "REDE"}
+{"id": "validation_software_01", "text": "O aplicativo de apresentacoes fecha quando adiciono um slide.", "label": "SOFTWARE"}
+{"id": "validation_software_02", "text": "A instalacao do editor de video nao termina.", "label": "SOFTWARE"}
+{"id": "validation_software_03", "text": "O navegador exibe uma falha interna ao iniciar.", "label": "SOFTWARE"}
+{"id": "validation_software_04", "text": "O programa de desenho congela ao importar uma imagem.", "label": "SOFTWARE"}
+{"id": "validation_hardware_01", "text": "Derrubei agua no teclado e as teclas nao funcionam.", "label": "HARDWARE"}
+{"id": "validation_hardware_02", "text": "A fonte do desktop queimou apos uma queda de energia.", "label": "HARDWARE"}
+{"id": "validation_hardware_03", "text": "O cooler da maquina esta travado.", "label": "HARDWARE"}
+{"id": "validation_hardware_04", "text": "A bateria do computador portatil esta estufada.", "label": "HARDWARE"}

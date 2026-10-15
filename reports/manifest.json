@@ -1,0 +1,32 @@
+{
+  "fingerprint": "27086ac964ac6056478cd5b6bd3a90b0669532ec1e4ca360d70afacaf1525cd4",
+  "config": {
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "seed": 42,
+    "max_length": 192,
+    "gradient_accumulation": 4,
+    "epochs": 2,
+    "experiments": [
+      {
+        "name": "lora_lr1e4",
+        "learning_rate": 0.0001,
+        "rank": 8,
+        "alpha": 16,
+        "dropout": 0.05
+      },
+      {
+        "name": "lora_lr3e4",
+        "learning_rate": 0.0003,
+        "rank": 8,
+        "alpha": 16,
+        "dropout": 0.05
+      }
+    ]
+  },
+  "data_sha256": {
+    "train": "eca2d9a2359682dccc78b07e7aeaa07fd0610c41c8d13686bc1201f250523a0d",
+    "validation": "dbf1fdd6fcd8ed5dddd338ae2b9fbe81fb5cf2d3690451f5009e1852ad144c12",
+    "test": "a86c538adb4b8e8b329c2f3844ee066fafcff4d2b9f0e66989c1796d218b340d"
+  }
+}

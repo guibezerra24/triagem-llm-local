@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.cache/
+.env
+models/
+artifacts/
+work/
+*.zip
+# O tokenizer e carregado da revisao fixa do modelo original.
+adapters/**/tokenizer.json
+adapters/**/tokenizer_config.json
+adapters/**/special_tokens_map.json
+adapters/**/added_tokens.json
+adapters/**/merges.txt
+adapters/**/vocab.json

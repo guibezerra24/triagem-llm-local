@@ -1,0 +1,227 @@
+{
+  "metrics": {
+    "n": 16,
+    "accuracy": 0.625,
+    "macro_f1": 0.5651515151515152,
+    "valid_rate": 1.0,
+    "mean_seconds": 0.5092187812500697,
+    "per_class": {
+      "ACESSO": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "support": 4
+      },
+      "REDE": {
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.3333333333333333,
+        "support": 4
+      },
+      "SOFTWARE": {
+        "precision": 0.5714285714285714,
+        "recall": 1.0,
+        "f1": 0.7272727272727273,
+        "support": 4
+      },
+      "HARDWARE": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "support": 4
+      }
+    },
+    "confusion_matrix": {
+      "ACESSO": {
+        "ACESSO": 1,
+        "REDE": 1,
+        "SOFTWARE": 0,
+        "HARDWARE": 2,
+        "INVALIDO": 0
+      },
+      "REDE": {
+        "ACESSO": 0,
+        "REDE": 1,
+        "SOFTWARE": 3,
+        "HARDWARE": 0,
+        "INVALIDO": 0
+      },
+      "SOFTWARE": {
+        "ACESSO": 0,
+        "REDE": 0,
+        "SOFTWARE": 4,
+        "HARDWARE": 0,
+        "INVALIDO": 0
+      },
+      "HARDWARE": {
+        "ACESSO": 0,
+        "REDE": 0,
+        "SOFTWARE": 0,
+        "HARDWARE": 4,
+        "INVALIDO": 0
+      }
+    }
+  },
+  "records": [
+    {
+      "id": "validation_acesso_01",
+      "text": "Meu usuario exige troca de credencial para entrar.",
+      "label": "ACESSO",
+      "response": "ACESSO",
+      "prediction": "ACESSO",
+      "seconds": 6.065132899999298,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_acesso_02",
+      "text": "Preciso habilitar meu perfil no painel de vendas.",
+      "label": "ACESSO",
+      "response": "HARDWARE",
+      "prediction": "HARDWARE",
+      "seconds": 0.2437009000004764,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_acesso_03",
+      "text": "A verificacao em duas etapas rejeita meu codigo.",
+      "label": "ACESSO",
+      "response": "HARDWARE",
+      "prediction": "HARDWARE",
+      "seconds": 0.21598890000132087,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_acesso_04",
+      "text": "Solicito recuperacao da minha conta de trabalho.",
+      "label": "ACESSO",
+      "response": "REDE",
+      "prediction": "REDE",
+      "seconds": 0.1569510999997874,
+      "new_tokens": 3,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_rede_01",
+      "text": "Os computadores do andar perderam conexao com a internet.",
+      "label": "REDE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.11060879999968165,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_rede_02",
+      "text": "A rede sem fio cai quando entro na sala de reuniao.",
+      "label": "REDE",
+      "response": "REDE",
+      "prediction": "REDE",
+      "seconds": 0.13623130000087258,
+      "new_tokens": 3,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_rede_03",
+      "text": "O servidor DNS corporativo esta inacessivel pela rede.",
+      "label": "REDE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.09985839999899326,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_rede_04",
+      "text": "O tunel VPN interrompe a conexao repetidamente.",
+      "label": "REDE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.09443819999978587,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_software_01",
+      "text": "O aplicativo de apresentacoes fecha quando adiciono um slide.",
+      "label": "SOFTWARE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.10731599999962782,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_software_02",
+      "text": "A instalacao do editor de video nao termina.",
+      "label": "SOFTWARE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.0987446999988606,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_software_03",
+      "text": "O navegador exibe uma falha interna ao iniciar.",
+      "label": "SOFTWARE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.09858260000146402,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_software_04",
+      "text": "O programa de desenho congela ao importar uma imagem.",
+      "label": "SOFTWARE",
+      "response": "SOFTWARE",
+      "prediction": "SOFTWARE",
+      "seconds": 0.08961199999976088,
+      "new_tokens": 2,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_hardware_01",
+      "text": "Derrubei agua no teclado e as teclas nao funcionam.",
+      "label": "HARDWARE",
+      "response": "HARDWARE",
+      "prediction": "HARDWARE",
+      "seconds": 0.16141720000086934,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_hardware_02",
+      "text": "A fonte do desktop queimou apos uma queda de energia.",
+      "label": "HARDWARE",
+      "response": "HARDWARE",
+      "prediction": "HARDWARE",
+      "seconds": 0.1613948000012897,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_hardware_03",
+      "text": "O cooler da maquina esta travado.",
+      "label": "HARDWARE",
+      "response": "HARDWARE",
+      "prediction": "HARDWARE",
+      "seconds": 0.14980780000041705,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    },
+    {
+      "id": "validation_hardware_04",
+      "text": "A bateria do computador portatil esta estufada.",
+      "label": "HARDWARE",
+      "response": "HARDWARE",
+      "prediction": "HARDWARE",
+      "seconds": 0.15771489999860933,
+      "new_tokens": 4,
+      "device": "cuda:0"
+    }
+  ]
+}

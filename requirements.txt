@@ -1,0 +1,8 @@
+transformers==4.51.3
+peft==0.15.2
+accelerate==1.6.0
+gradio==5.29.0
+numpy==2.2.5
+safetensors==0.5.3
+huggingface-hub==0.30.2
+matplotlib==3.10.1

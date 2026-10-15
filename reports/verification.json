@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "checks": [
+    "Nenhuma duplicacao literal entre particoes",
+    "64 exemplos: prompts mascarados e respostas completas em tensores CUDA",
+    "F1, acuracia e respostas invalidas conferidos com resultado conhecido",
+    "Frontend HTTP: original, LoRA deterministico e LoRA com amostragem executados em CUDA",
+    "Frontend rejeita prompt vazio",
+    "Manifesto corresponde ao codigo, configuracao e dados entregues"
+  ],
+  "frontend_outputs": [
+    {
+      "response": "ACESSO",
+      "categoria": "ACESSO",
+      "latencia_s": 0.198,
+      "GPU": "NVIDIA GeForce GTX 1650",
+      "dispositivo": "cuda:0",
+      "modelo": "Original",
+      "temperatura": 0,
+      "VRAM_alocada_MiB": 1895.5
+    },
+    {
+      "response": "ACESSO",
+      "categoria": "ACESSO",
+      "latencia_s": 0.225,
+      "GPU": "NVIDIA GeForce GTX 1650",
+      "dispositivo": "cuda:0",
+      "modelo": "Ajustado com LoRA",
+      "temperatura": 0,
+      "VRAM_alocada_MiB": 1895.5
+    },
+    {
+      "response": "ACESSO",
+      "categoria": "ACESSO",
+      "latencia_s": 0.637,
+      "GPU": "NVIDIA GeForce GTX 1650",
+      "dispositivo": "cuda:0",
+      "modelo": "Ajustado com LoRA",
+      "temperatura": 0.7,
+      "VRAM_alocada_MiB": 1895.5
+    }
+  ]
+}

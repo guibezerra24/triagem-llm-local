@@ -1,0 +1,83 @@
+{
+  "name": "lora_lr1e4",
+  "hyperparameters": {
+    "name": "lora_lr1e4",
+    "learning_rate": 0.0001,
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05
+  },
+  "training": {
+    "seconds": 31.980166600000302,
+    "peak_allocated_mib": 2130.58935546875,
+    "peak_reserved_mib": 2462.0,
+    "trainable_parameters": 540672,
+    "all_parameters": 494573440,
+    "optimizer_steps": 32,
+    "device": "cuda:0",
+    "dtype": "torch.float32"
+  },
+  "validation": {
+    "n": 16,
+    "accuracy": 0.875,
+    "macro_f1": 0.873015873015873,
+    "valid_rate": 1.0,
+    "mean_seconds": 0.1458070937502498,
+    "per_class": {
+      "ACESSO": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "support": 4
+      },
+      "REDE": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "support": 4
+      },
+      "SOFTWARE": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.888888888888889,
+        "support": 4
+      },
+      "HARDWARE": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.888888888888889,
+        "support": 4
+      }
+    },
+    "confusion_matrix": {
+      "ACESSO": {
+        "ACESSO": 3,
+        "REDE": 0,
+        "SOFTWARE": 0,
+        "HARDWARE": 1,
+        "INVALIDO": 0
+      },
+      "REDE": {
+        "ACESSO": 0,
+        "REDE": 3,
+        "SOFTWARE": 1,
+        "HARDWARE": 0,
+        "INVALIDO": 0
+      },
+      "SOFTWARE": {
+        "ACESSO": 0,
+        "REDE": 0,
+        "SOFTWARE": 4,
+        "HARDWARE": 0,
+        "INVALIDO": 0
+      },
+      "HARDWARE": {
+        "ACESSO": 0,
+        "REDE": 0,
+        "SOFTWARE": 0,
+        "HARDWARE": 4,
+        "INVALIDO": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "selected": "lora_lr1e4",
+  "criterion": "validation macro_f1, accuracy; tie: lower learning rate"
+}
