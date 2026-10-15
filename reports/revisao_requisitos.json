@@ -1,0 +1,120 @@
+{
+  "review_date": "2026-10-15",
+  "scope": "Revisao documental e de consistencia das evidencias existentes; sem novo treinamento ou novas metricas de modelo.",
+  "participants": {
+    "participants": [
+      {
+        "name": "Guilherme Rezende",
+        "rm": "98508"
+      },
+      {
+        "name": "Matheus Brisqui",
+        "rm": "97892"
+      },
+      {
+        "name": "Gustavo Brisqui",
+        "rm": "97969"
+      }
+    ],
+    "group_size": 3,
+    "professor_authorization": "Entrega em trio autorizada pelo professor, conforme informado pelo grupo."
+  },
+  "checks": [
+    {
+      "requirement": "Escolher e treinar uma LLM local",
+      "status": "Atendido",
+      "finding": "Qwen2.5-0.5B-Instruct, revisão fixa, dois adaptadores LoRA e histórico de 32 atualizações por configuração.",
+      "evidence": "configs/experiments.json; adapters/; reports/*_training.json; reports/*_history.json"
+    },
+    {
+      "requirement": "Escolher um problema específico",
+      "status": "Atendido",
+      "finding": "Triagem de chamados em português: ACESSO, REDE, SOFTWARE e HARDWARE.",
+      "evidence": "README.md; src/common.py; data/README.md"
+    },
+    {
+      "requirement": "Testar diferentes parâmetros",
+      "status": "Atendido",
+      "finding": "Taxas de aprendizado 0,0001 e 0,0003, mantendo os demais fatores constantes. A integração também registra temperatura 0 e 0,7.",
+      "evidence": "configs/experiments.json; reports/*_result.json; reports/verification.json"
+    },
+    {
+      "requirement": "Verificar e avaliar as respostas",
+      "status": "Atendido",
+      "finding": "Validação separada, comparação original/LoRA no teste, respostas brutas, acurácia, F1 macro, métricas por classe e matriz de confusão.",
+      "evidence": "reports/RESULTADOS.md; reports/*_validation.json; reports/*_test.json"
+    },
+    {
+      "requirement": "Executar os testes do modelo na GPU",
+      "status": "Atendido",
+      "finding": "Treinamento e registros de geração em cuda:0; teste tensorial com backward finito. Dados, métricas e interface são processados em CPU.",
+      "evidence": "reports/gpu.json; reports/*_training.json; reports/*_test.json; reports/verification.json"
+    },
+    {
+      "requirement": "Frontend para inserir/criar o prompt",
+      "status": "Atendido",
+      "finding": "Campo de texto livre, seleção do modelo, temperatura e retorno da categoria com informações da GPU. Integração HTTP aprovada.",
+      "evidence": "app.py; reports/frontend.jpg; reports/verification.json"
+    },
+    {
+      "requirement": "Print da GPU instalada e funcionando no VSCode",
+      "status": "Atendido",
+      "finding": "Captura original do VSCode exibindo GTX 1650, runtime CUDA 12.6, cuda_available=True, cuda:0, backward_finite=True e nvidia-smi.",
+      "evidence": "reports/gpu_vscode.jpg; reports/gpu.txt; src/gpu_check.py"
+    },
+    {
+      "requirement": "Documentação e código no GitHub",
+      "status": "Atendido",
+      "finding": "Repositório público com código, instruções, dados, configurações, adaptadores, métricas, capturas e licenças; atualização dos integrantes incluída nesta revisão.",
+      "evidence": "https://github.com/guibezerra24/triagem-llm-local"
+    },
+    {
+      "requirement": "Composição do grupo",
+      "status": "Atendido com autorização informada",
+      "finding": "Três integrantes identificados. O grupo informou que o professor autorizou a entrega em trio, em exceção ao tamanho original de 4 a 5 pessoas.",
+      "evidence": "team.json; README.md"
+    }
+  ],
+  "manifest_matches": true,
+  "dataset_counts": {
+    "train": {
+      "n": 64,
+      "classes": {
+        "ACESSO": 16,
+        "REDE": 16,
+        "SOFTWARE": 16,
+        "HARDWARE": 16
+      }
+    },
+    "validation": {
+      "n": 16,
+      "classes": {
+        "ACESSO": 4,
+        "REDE": 4,
+        "SOFTWARE": 4,
+        "HARDWARE": 4
+      }
+    },
+    "test": {
+      "n": 24,
+      "classes": {
+        "ACESSO": 6,
+        "REDE": 6,
+        "SOFTWARE": 6,
+        "HARDWARE": 6
+      }
+    }
+  },
+  "all_model_records_use_cuda": true,
+  "frontend_http_available_at_review": true,
+  "original_test_accuracy": 0.4583333333333333,
+  "selected_test_accuracy": 0.8333333333333334,
+  "original_test_macro_f1": 0.41277472527472525,
+  "selected_test_macro_f1": 0.8292540792540792,
+  "observations": [
+    "GPU Environment e GPU Monitor sao sugestoes do enunciado; nao foram instalados nem declarados instalados.",
+    "CUDA 12.6 e o runtime do PyTorch validado nesta GPU; nao foi necessaria instalacao separada do Toolkit/nvcc.",
+    "Dados sinteticos; resultados nao demonstram desempenho em chamados reais.",
+    "A apresentacao oral e o envio institucional do link dependem do grupo."
+  ]
+}

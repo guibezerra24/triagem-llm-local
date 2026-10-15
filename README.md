@@ -1,6 +1,6 @@
 # Triagem TI — ajuste de uma LLM local na GTX 1650
 
-Trabalho acadêmico para um grupo de **4 a 5 pessoas**. A aplicação recebe um chamado em português e gera uma categoria: **ACESSO, REDE, SOFTWARE ou HARDWARE**. O objetivo é comparar uma LLM original com dois ajustes de treinamento e demonstrar inferência local na GPU.
+Trabalho acadêmico de **Guilherme Rezende (RM 98508), Matheus Brisqui (RM 97892) e Gustavo Brisqui (RM 97969)**. A aplicação recebe um chamado em português e gera uma categoria: **ACESSO, REDE, SOFTWARE ou HARDWARE**. O objetivo é comparar uma LLM original com dois ajustes de treinamento e demonstrar inferência local na GPU.
 
 ## Escolha do modelo e do problema
 
@@ -51,7 +51,7 @@ O experimento altera **uma variável: taxa de aprendizado**. Os demais parâmetr
 
 A geração da avaliação é livre, sem restringir tokens a uma lista: `do_sample=False`, no máximo 12 novos tokens. A validação escolhe o maior **F1 macro**; em empate, acurácia e menor taxa de aprendizado. A escolha é salva em `reports/selection.json` **antes** do teste. Somente o modelo original e o adaptador escolhido são avaliados no teste. O conjunto de teste não decide hiperparâmetros.
 
-Métricas: acurácia, precisão/recall/F1 por classe, F1 macro, taxa de formato válido, matriz de confusão e latência por chamado. O parser aceita apenas uma categoria exata após remover espaços externos e converter para maiúsculas. Prosa adicional e múltiplas categorias contam como `INVALIDO`, sem tentar adivinhar a resposta. A latência inclui tokenização excluída do cronômetro e geração com sincronização CUDA, sem warmup separado; não é um benchmark estabilizado de produção.
+Métricas: acurácia, precisão/recall/F1 por classe, F1 macro, taxa de formato válido, matriz de confusão e latência por chamado. O parser aceita apenas uma categoria exata após remover espaços externos e converter para maiúsculas. Prosa adicional e múltiplas categorias contam como `INVALIDO`, sem tentar adivinhar a resposta. A latência mede a geração com sincronização CUDA e exclui a tokenização, sem warmup separado; não é um benchmark estabilizado de produção.
 
 ## Execução e resultados
 
@@ -76,11 +76,9 @@ A interface fica em **http://127.0.0.1:7860**, recebe texto livre, permite troca
 
 Para verificar máscara da loss, separação dos dados, métricas e integração HTTP com os dois modos de modelo na GPU, mantenha o frontend ativo e execute `.\.venv\Scripts\python.exe scripts/verify_project.py`. A execução entregue passou nas verificações e está registrada em `reports/verification.json`.
 
-Nesta sessão, o ambiente já instalado está em `../../work/.venv`, relativo à pasta deste projeto. Para usar imediatamente nesta máquina: `..\..\work\.venv\Scripts\python.exe app.py`. Ao clonar do GitHub em outra pasta, siga a instalação padrão para criar `.venv` dentro do projeto.
-
 O **relatório completo está em [`reports/RESULTADOS.md`](reports/RESULTADOS.md)**. As respostas individuais ficam em `reports/*_validation.json` e `reports/*_test.json`; as curvas de loss em `reports/*_history.json`; tempo, VRAM e quantidade de parâmetros em `reports/*_training.json`. `reports/manifest.json` registra hashes dos dados e do código/configuração. `reports/summary.json` consolida os resultados. Os adaptadores treinados ficam em `adapters/`; os pesos originais são baixados do Hugging Face e não entram no Git.
 
-Não se deve declarar que o ajuste melhorou sem comparar os números. Mesmo 100% neste teste pequeno não comprova generalização. São apenas seis exemplos de teste por classe e uma seed; relatos reais, ambiguidade, múltiplas categorias e mudanças de linguagem exigem avaliação adicional. O protótipo não executa ações administrativas e requer revisão humana antes de qualquer uso operacional.
+No teste de 24 chamados, o modelo original acertou **11 (45,83%)**, e o ajuste selecionado acertou **20 (83,33%)**. São apenas seis exemplos de teste por classe e uma seed; relatos reais, ambiguidade, múltiplas categorias e mudanças de linguagem exigem avaliação adicional. O protótipo não executa ações administrativas e requer revisão humana antes de qualquer uso operacional.
 
 ## Evidência no VSCode
 
@@ -90,19 +88,17 @@ Para reproduzir em sala: selecione o interpretador `.venv\Scripts\python.exe`, a
 
 As extensões **GPU Environment** e **GPU Monitor**, sugeridas no enunciado, podem ser pesquisadas no Marketplace do VSCode. Verifique editor, suporte à sua plataforma e requisitos antes de instalar; não são necessárias para o CUDA funcionar. Não afirmamos que estão instaladas. O diagnóstico PyTorch mais `nvidia-smi` comprova uso computacional além da presença física da placa.
 
-## Organização do grupo
+## Integrantes
 
-| Integrante | Responsabilidade | Evidência para apresentar |
-|---|---|---|
-| Pessoa 1 | Problema, escolha da LLM e revisão dos dados | Critérios de rotulagem e exemplos |
-| Pessoa 2 | Ambiente, GPU e CUDA | Diagnóstico, versões e print no VSCode |
-| Pessoa 3 | Treinamento e hiperparâmetros | Configurações, loss, tempo e VRAM |
-| Pessoa 4 | Avaliação, comparação e frontend | Respostas, F1, demonstração local |
-| Pessoa 5, se houver | Integração, GitHub e documentação | Reprodução, revisão e apresentação |
+| Integrante | RM |
+|---|---|
+| Guilherme Rezende | 98508 |
+| Matheus Brisqui | 97892 |
+| Gustavo Brisqui | 97969 |
 
-Com quatro pessoas, distribuir a documentação entre todos. Substituir os nomes genéricos pelos nomes e identificadores reais do grupo. A divisão é uma proposta, não um registro de contribuições já feitas.
+**Entrega em trio autorizada pelo professor, conforme informado pelo grupo.** O enunciado original previa quatro a cinco integrantes. Os dados dos participantes também estão em `team.json`.
 
-Roteiro de apresentação (8–10 minutos): problema e categorias (1 min); escolha do modelo/LoRA (1 min); GPU/CUDA e print (1 min); dados e controle de vazamento (1 min); parâmetros e comparação (2 min); demo com um chamado novo (1–2 min); limitações, reprodutibilidade e GitHub (1 min). Os integrantes devem compreender o código e informar o auxílio de IA conforme as regras da disciplina.
+Roteiro de apresentação (8–10 minutos): problema e categorias (1 min); escolha do modelo/LoRA (1 min); GPU/CUDA e print (1 min); dados e controle de vazamento (1 min); parâmetros e comparação (2 min); demo com um chamado novo (1–2 min); limitações, reprodutibilidade e GitHub (1 min).
 
 ## Estrutura e GitHub
 
@@ -144,4 +140,6 @@ git push -u origin main
 | Frontend para criar prompt | Gradio local, texto livre, modelo e temperatura |
 | Print da GPU no VSCode | `reports/gpu_vscode.jpg` e diagnóstico real |
 | Documentação e código no GitHub | Projeto organizado para o repositório e publicação verificável |
-| Grupo de 4 a 5 | Divisão proposta acima, nomes a preencher |
+| Grupo | Três integrantes identificados; entrega em trio autorizada pelo professor, conforme informado pelo grupo |
+
+A revisão detalhada dos requisitos e seus arquivos de comprovação está em [`reports/REQUISITOS.md`](reports/REQUISITOS.md).

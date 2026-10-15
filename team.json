@@ -1,0 +1,9 @@
+{
+  "participants": [
+    {"name": "Guilherme Rezende", "rm": "98508"},
+    {"name": "Matheus Brisqui", "rm": "97892"},
+    {"name": "Gustavo Brisqui", "rm": "97969"}
+  ],
+  "group_size": 3,
+  "professor_authorization": "Entrega em trio autorizada pelo professor, conforme informado pelo grupo."
+}

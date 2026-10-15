@@ -1,5 +1,9 @@
 # Resultados reais — Triagem TI
 
+**Integrantes:** Guilherme Rezende (RM 98508); Matheus Brisqui (RM 97892); Gustavo Brisqui (RM 97969).
+
+Entrega em trio autorizada pelo professor, conforme informado pelo grupo.
+
 Execução local na **NVIDIA GeForce GTX 1650**, PyTorch **2.7.1+cu126**, runtime CUDA **12.6**. Operações e backward confirmados em `cuda:0`. Os números abaixo são lidos dos JSONs desta entrega, sem valores simulados.
 
 ## Seleção pela validação (16 exemplos)

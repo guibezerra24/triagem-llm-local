@@ -1,6 +1,6 @@
 # Dados de triagem de TI
 
-Corpus sintético autoral criado para este trabalho em 15/10/2026 com auxílio de IA. Não contém chamados de clientes, nomes, senhas nem dados pessoais. Licença MIT do projeto. Os pesos Qwen possuem licença própria, Apache-2.0.
+Conjunto de chamados sintéticos criado para este trabalho em 15/10/2026. Não contém chamados de clientes, nomes, senhas nem dados pessoais. Licença MIT do projeto. Os pesos Qwen possuem licença própria, Apache-2.0.
 
 São 104 exemplos em português: 64 de treino (16 por classe), 16 de validação (4 por classe) e 24 de teste (6 por classe). As frases são escritas separadamente por partição, sem expandir o mesmo template com sufixos. `scripts/build_dataset.py` contém todas as frases e recria os arquivos JSONL. Há uma checagem de duplicação literal; isso não elimina similaridade semântica.
 

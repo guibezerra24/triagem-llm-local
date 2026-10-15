@@ -1,6 +1,5 @@
 """Gera tabelas e figuras apenas de arquivos efetivamente produzidos na GPU."""
 import csv
-import html
 import json
 import os
 from pathlib import Path
@@ -30,7 +29,11 @@ def main():
     original = summary["test"]["baseline"]
     adjusted = summary["test"][selected]
     exp = next(r for r in summary["experiments"] if r["name"] == selected)
+    team = json.loads((ROOT / "team.json").read_text(encoding="utf-8"))
+    participants = "; ".join(f"{person['name']} (RM {person['rm']})" for person in team["participants"])
     lines = ["# Resultados reais — Triagem TI\n",
+        f"**Integrantes:** {participants}.\n",
+        team["professor_authorization"] + "\n",
         f"Execução local na **{gpu['gpu']}**, PyTorch **{gpu['torch']}**, runtime CUDA **{gpu['cuda_runtime']}**. Operações e backward confirmados em `{gpu['operation_device']}`. Os números abaixo são lidos dos JSONs desta entrega, sem valores simulados.\n",
         "## Seleção pela validação (16 exemplos)\n"]
     validation_rows = [["Original", f"{summary['baseline_validation']['accuracy']:.2%}", f"{summary['baseline_validation']['macro_f1']:.4f}", "—", "—"]]
